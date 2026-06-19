@@ -1,365 +1,229 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Taeheon Kim</title>
-
-  <meta name="author" content="Taeheon Kim">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style type="text/css"> 
-    .br { 
-        display: block; 
-        margin: -4em; 
-    } 
-    /* News: scrollable wrapper */
-    .news-scroller{
-      max-width: 800px;         /* 페이지 폭과 맞춤 */
-      max-height: 260px;        /* 원하는 높이로 조절 (예: 220~320px) */
-      margin: 0 auto;           /* 가운데 정렬 */
-      overflow-y: scroll;         /* 세로 스크롤 */
-      -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
-      scrollbar-gutter: stable both-edges; /* 스크롤바 공간 안정화 */
-    }
-
-    .news-table{
-      width: 100%;
-      border-collapse: collapse;
-      table-layout: fixed;      /* 긴 링크/문장 줄바꿈에 유리 */
-    }
-
-    .news-table td{
-      padding: 6px 14px;
-      vertical-align: top;
-      text-align: left;
-      word-break: break-word;   /* 너무 긴 단어 줄바꿈 */
-    }
-
-    /* 해결책 1: 테이블 너비 제한 */
-    /* .news-table {
-        width: 100%;
-        max-width: 800px;
-        border-collapse: collapse;
-        table-layout: fixed;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .news-table td {
-        padding: 4px 15px;
-        vertical-align: top;
-        text-align: left;
-    } */
-    .date-badge {
-        background-color: #dddddd;
-        color: #5f5d5d;
-        padding: 3px 7px;
-        font-weight: bold;
-        border-radius: 4px;
-        display: inline-block;
-        margin-right: 7px;
-        white-space: nowrap;
-    }
-  </style> 
-
+  <meta name="author" content="Taeheon Kim">
+  <meta name="description" content="Taeheon Kim, Ph.D. student at Seoul National University working on efficient learning and knowledge transfer.">
+  <title>Taeheon Kim</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:center"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:0%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Taeheon Kim</name>
-              </p>
-              <p style="text-align:justify">
-                I'm a 2nd-year M.S. student in Electronics and Computer Engineering at
-                  <a href="https://snumprlab.github.io/" target="_new">Machine Perception and Reasoning Lab.</a>
-                  at <a href="https://en.snu.ac.kr/" target="_new">Seoul National University</a> advised by
-                  Prof. <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>.
-                My research focus is on efficient learning, continual learning, federated learning, model safety, and machine unlearning.
-              </p>
-              <!-- <p style="text-align:justify">
-                During my M.S., I was fortunate to work as a research intern at the AML (Advanced Machine Learning) team in <a href="https://www.lgresearch.ai" target="_new">LG AI research</a> (2023).
-                <b>Currently, I am looking for a research internship position for continual learning research.</b>
-              </p> -->
-              <p style="text-align:justify">
-                I received B.S. from <a href="https://www.yonsei.ac.kr/en_sc/" target="_new">Yonsei University</a> in Computer Science
-                  under the supervision of Prof. <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>.
-              </p>
-              <p style="text-align:center">
-                <a href="personal/CV.pdf" target="_new">CV</a> &nbsp/&nbsp
-                <a href="mailto:thkim0305@snu.ac.kr">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=VSYbxlcAAAAJ&hl=en" target="_new">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/taeheon-kim-0904ba319/" target="_new">LinkedIn</a> &nbsp/&nbsp
-                <!-- <a href="https://dblp.org/pid/350/4104.html" target="_new">DBLP</a> &nbsp/&nbsp -->
-                <a href="https://github.com/ta3h30nk1m/" target="_new">Github</a>
-              </p>
-            </td>
-            <td style="padding:0%;width:28%;max-width:40%">
-              <img style="width:70%;max-width:100%" alt="profile photo" src="personal/me.jpg" class="hoverZoomLink">
-            </td>
-          </tr>
-        </tbody></table>
-        <br>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav-brand" href="#">Taeheon Kim</a>
+      <div class="nav-links">
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+      </div>
+    </nav>
+  </header>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr><td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp;&nbsp;&nbsp; News</heading></td>
-        </tr></tbody></table>
-        <div class="news-scroller" aria-label="News list" tabindex="0">
-          <table class="news-table"><tbody>
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2026.01</span>
-                One paper on collaborative learning among heterogeneous clients recieved <b style="color:red;">Best Paper Award</b> at <a href="https://personalizedllm.github.io/events/perfm-aaai26/" target="_new">AAAI 2026 workshop of PerFM</a>.
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2026.01</span>
-                One paper on collaborative learning among heterogeneous clients accepted to ICLR 2026.
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2025.11</span>
-                One paper on evaluation metric for machine unlearning accepted to AAAI 2026.
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2025.05</span>
-                Our workshop proposal (CLVISION: Continual Learning in Computer Vision) accepted to ICCV 2025. I will serve as an Challenge Chair in <a href="https://sites.google.com/view/clvision2025/overview?authuser=0" target="_new">ICCV 2025 @ CLVISION</a>.
-              </td>
-            </tr>
-  
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2025.05</span>
-                One paper on safety enhancement in LLMs accepted to ACL 2025 Main.
-              </td>
-            </tr>
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="intro-heading">
+      <div class="hero-copy">
+        <p class="eyebrow">Ph.D. Student / Machine Learning Researcher</p>
+        <h1 id="intro-heading">Taeheon Kim</h1>
+        <p class="lead">
+          I am a 2nd-year Ph.D. student in Electrical and Computer Engineering at
+          <a href="https://snumprlab.github.io/" target="_blank" rel="noopener">Machine Perception and Reasoning Lab</a>,
+          <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener">Seoul National University</a>,
+          advised by Prof.
+          <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>.
+        </p>
+        <p>
+          My research focuses on model personalization through efficient learning, including continual learning,
+          domain adaptation, machine unlearning, and knowledge transfer such as federated learning and model merging.
+        </p>
+        <p>
+          I received my B.S. in Computer Science from
+          <a href="https://www.yonsei.ac.kr/en_sc/" target="_blank" rel="noopener">Yonsei University</a>
+          under the supervision of Prof.
+          <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>.
+        </p>
 
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2025.04</span>
-                One paper on heterogeneous federated learning for MLLMs accepted to <a href="https://sites.google.com/view/mmfm3rdworkshop/home" target="_new">CVPRW 2025 @ MMFM</a>.
-              </td>
-            </tr>
-  
-            <tr>
-              <td style="text-align:justify">
-                <span class="date-badge">2024.09</span>
-                I started my M.S. degree at Seoul National University under the supervision of Prof. <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>
-              </td>
-            </tr>
-  
-          </tbody></table>
+        <div class="profile-actions" aria-label="Profile links">
+          <a class="button primary" href="personal/CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="button" href="mailto:thkim0305@snu.ac.kr">Email</a>
+          <a class="button" href="https://scholar.google.com/citations?user=VSYbxlcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="button" href="https://www.linkedin.com/in/taeheon-kim-0904ba319/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://github.com/ta3h30nk1m/" target="_blank" rel="noopener">GitHub</a>
         </div>
+      </div>
 
-        <p></p>
-        <p></p>
+      <aside class="profile-panel" aria-label="Profile summary">
+        <img class="profile-photo" src="personal/me2.jpg" alt="Taeheon Kim">
+        <div class="research-tags" aria-label="Research interests">
+          <span>Continual Learning</span>
+          <span>Model Merging</span>
+          <span>Machine Unlearning</span>
+          <span>Federated Learning</span>
+        </div>
+      </aside>
+    </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <br><br>
-          <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Publications</heading></td>
-        </tbody></table>
+    <section class="section" id="news" aria-labelledby="news-heading">
+      <div class="section-header">
+        <p class="section-kicker">Latest</p>
+        <h2 id="news-heading">News</h2>
+      </div>
+      <ol class="news-list" tabindex="0" aria-label="News list">
+        <li>
+          <time datetime="2026-06">2026.06</time>
+          <span><strong>DART</strong> <a class="pub-ref" href="#pub-dart">[1]</a> has been accepted to <strong>ECCV 2026</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2026-01">2026.01</time>
+          <span>
+            <strong>FedMosaic</strong> <a class="pub-ref" href="#pub-fedmosaic">[2]</a> received the <strong class="highlight-text">Best Paper Award</strong> at the
+            <a href="https://personalizedllm.github.io/events/perfm-aaai26/" target="_blank" rel="noopener">AAAI 2026 PerFM Workshop</a>.
+          </span>
+        </li>
+        <li>
+          <time datetime="2026-01">2026.01</time>
+          <span><strong>FedMosaic</strong> <a class="pub-ref" href="#pub-fedmosaic">[2]</a> has been accepted to <strong>ICLR 2026</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2025-11">2025.11</time>
+          <span><strong>IDI</strong> <a class="pub-ref" href="#pub-idi">[3]</a> has been accepted to <strong>AAAI 2026</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2025-05">2025.05</time>
+          <span>
+            Our workshop proposal, CLVISION: Continual Learning in Computer Vision, has been accepted to ICCV 2025.
+            I will serve as a Challenge Chair for
+            <a href="https://sites.google.com/view/clvision2025/overview?authuser=0" target="_blank" rel="noopener">ICCV 2025 @ CLVISION</a>.
+          </span>
+        </li>
+        <li>
+          <time datetime="2025-05">2025.05</time>
+          <span><strong>RepBend</strong> <a class="pub-ref" href="#pub-repbend">[4]</a> has been accepted to <strong>ACL 2025 Main</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2024-09">2024.09</time>
+          <span>
+            I started my Ph.D. at Seoul National University under the supervision of Prof.
+            <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>.
+          </span>
+        </li>
+      </ol>
+    </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
-          <!-- ################################################################################################################### -->
-          <tr>
-            <td style="padding:15px;width:30%;vertical-align:middle">
-                <img src='papers/seo2025fedmosaic/fedmosaic.png' style="border-style: none width:100%;max-width:100%">
-            </td>
-            <td width="75%" valign="middle" align="justify">
-              <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-                <papertitle>
-                  Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients
-                </papertitle>
-              <!-- </a> -->
-              <br>
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <div class="section-header">
+        <p class="section-kicker">Selected Work</p>
+        <h2 id="publications-heading">Publications</h2>
+      </div>
 
-              <a href="https://dbd05088.github.io/" target="_new">Minhyuk Seo*</a>,
-              <strong>Taeheon Kim*</strong>,
-              <a href="https://hankook.github.io/" target="_new">Hankook Lee</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
-              <br>
+      <article class="publication" id="pub-dart">
+        <div class="publication-media" aria-label="Domain Arithmetic publication">
+          <img src="papers/kang2026dart/dart_fig2.png" alt="Domain Arithmetic teaser">
+        </div>
+        <div class="publication-content">
+          <h3><span class="publication-number">[1]</span> Domain Arithmetic: One-Shot VLA Adaptation under Environmental Shifts</h3>
+          <p class="authors">
+            Taewook Kang*, <strong>Taeheon Kim*</strong>, Donghyun Shin,
+            <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>
+          </p>
+          <p class="venue"><strong>ECCV 2026</strong> <span>to appear</span></p>
+        </div>
+      </article>
 
-              <b>ICLR 2026 </b> / AAAI 2026 PerFM Workshop <b style="color:Magenta;">Best Paper</b>
-              <br>
+      <article class="publication" id="pub-fedmosaic">
+        <a class="publication-media" href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_blank" rel="noopener" aria-label="Co-LoRA publication">
+          <img src="papers/seo2025fedmosaic/colora.png" alt="Co-LoRA teaser">
+        </a>
+        <div class="publication-content">
+          <h3><span class="publication-number">[2]</span> Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients</h3>
+          <p class="authors">
+            <a href="https://dbd05088.github.io/" target="_blank" rel="noopener">Minhyuk Seo*</a>,
+            <strong>Taeheon Kim*</strong>,
+            <a href="https://hankook.github.io/" target="_blank" rel="noopener">Hankook Lee</a>,
+            <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>,
+            <a href="https://www.esat.kuleuven.be/psi/TT" target="_blank" rel="noopener">Tinne Tuytelaars</a>
+          </p>
+          <p class="venue"><strong>ICLR 2026</strong> / AAAI 2026 PerFM Workshop <span>Best Paper</span></p>
+          <div class="paper-links">
+            <a href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_blank" rel="noopener">PDF</a>
+            <a href="papers/seo2025fedmosaic/fedmosaic.bib" target="_blank" rel="noopener">BibTeX</a>
+            <a href="https://github.com/snumprlab/fedmosaic" target="_blank" rel="noopener">Code</a>
+            <a href="https://huggingface.co/datasets/SNUMPR/DRAKE" target="_blank" rel="noopener">Dataset</a>
+          </div>
+        </div>
+      </article>
 
-              [<a href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_new">pdf</a>]
-              [<a href="papers/seo2025fedmosaic/fedmosaic.bib" target="_new">bibtex</a>]
-              [<a href="https://github.com/snumprlab/fedmosaic" target="_new">code</a>]
-              [<a href="https://huggingface.co/datasets/SNUMPR/DRAKE" target="_new">dataset</a>]
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-            </td>
-          </tr>
+      <article class="publication" id="pub-idi">
+        <a class="publication-media" href="https://arxiv.org/pdf/2405.17878" target="_blank" rel="noopener" aria-label="Information theoretic metric publication">
+          <img src="papers/jeon2024information/idi_fig.png" alt="Information theoretic metric teaser">
+        </a>
+        <div class="publication-content">
+          <h3><span class="publication-number">[3]</span> An Information Theoretic Metric for Evaluating Unlearning Models</h3>
+          <p class="authors">
+            Dongjae Jeon*, Wonje Jeung*, <strong>Taeheon Kim</strong>,
+            <a href="https://albert-no.github.io/" target="_blank" rel="noopener">Albert No</a>,
+            <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>
+          </p>
+          <p class="venue"><strong>AAAI 2026</strong></p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2405.17878" target="_blank" rel="noopener">PDF</a>
+            <a href="papers/jeon2024information/jeon2024information.bib" target="_blank" rel="noopener">BibTeX</a>
+          </div>
+        </div>
+      </article>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='papers/jeon2024information/idi_fig.png' style="border-style: none width:100%;max-width:100%">
-            </td>
-            <td width="75%" valign="middle" align="justify">
-                <papertitle>
-                    An Information Theoretic Metric for Evaluating Unlearning Models
-                </papertitle>
-              <br>
-              Dongjae Jeon*,
-              Wonje Jeung*,
-              <strong>Taeheon Kim</strong>,
-              <a href="https://albert-no.github.io/" target="_new"">Albert No</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>
-              <br>
+      <article class="publication" id="pub-repbend">
+        <a class="publication-media" href="https://arxiv.org/pdf/2504.01550" target="_blank" rel="noopener" aria-label="Representation Bending publication">
+          <img src="papers/yousefpour2025repbend/yousefpour2025repbend.png" alt="Representation Bending teaser">
+        </a>
+        <div class="publication-content">
+          <h3><span class="publication-number">[4]</span> Representation Bending for Large Language Model Safety</h3>
+          <p class="authors">
+            Ashkan Yousefpour*, <strong>Taeheon Kim*</strong>, Ryan S. Kwon, Seungbeen Lee,
+            Wonje Jeung, Seungju Han, Alvin Wan, Harrison Ngan,
+            <a href="https://yj-yu.github.io/home/" target="_blank" rel="noopener">Youngjae Yu</a>,
+            <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>
+          </p>
+          <p class="venue"><strong>ACL 2025 Main</strong></p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2504.01550" target="_blank" rel="noopener">PDF</a>
+            <a href="papers/yousefpour2025repbend/yousefpour2025repbend.bib" target="_blank" rel="noopener">BibTeX</a>
+            <a href="https://github.com/AIM-Intelligence/RepBend" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
 
-              <b>AAAI 2026</b>
-              <br>
+      <p class="publication-note">* indicates equal contribution.</p>
+    </section>
 
-              [<a href="https://arxiv.org/pdf/2405.17878" target="_new">pdf</a>]
-              [<a href="papers/jeon2024information/jeon2024information.bib" target="_new">bibtex</a>]
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-            </td>
-          </tr>
-          
-          <tr>
-            <td style="padding:15px;width:30%;vertical-align:middle">
-                <img src='papers/yousefpour2025repbend/yousefpour2025repbend.png' style="border-style: none width:100%;max-width:100%">
-            </td>
-            <td width="75%" valign="middle" align="justify">
-              <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-                <papertitle>
-                  Representation Bending for Large Language Model Safety
-                </papertitle>
-              <!-- </a> -->
-              <br>
-
-              Ashkan Yousefpour*,
-              <strong>Taeheon Kim*</strong>,
-              Ryan S. Kwon,
-              Seungbeen Lee,
-              Wonje Jeung,
-              Seungju Han,
-              Alvin Wan,
-              Harrison Ngan,
-              <a href="https://yj-yu.github.io/home/" target="_new">Youngjae Yu</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <br>
-
-              <strong>ACL 2025 Main</strong>
-              <br>
-
-              [<a href="https://arxiv.org/pdf/2504.01550" target="_new">pdf</a>]
-              [<a href="papers/yousefpour2025repbend/yousefpour2025repbend.bib" target="_new">bibtex</a>]
-              [<a href="https://github.com/AIM-Intelligence/RepBend" target="_new">code</a>]
-              <br>
-              
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:15px;width:30%;vertical-align:middle">
-                <img src='papers/seo2025heft/seo2025heft.png' style="border-style: none width:100%;max-width:100%">
-            </td>
-            <td width="75%" valign="middle" align="justify">
-              <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-                <papertitle>
-                  HEFT: Multi-modal Personalized Federated Continual Learning for Heterogeneous Clients
-                </papertitle>
-              <!-- </a> -->
-              <br>
-
-              <a href="https://dbd05088.github.io/" target="_new">Minhyuk Seo*</a>,
-              <strong>Taeheon Kim*</strong>,
-              <a href="https://hankook.github.io/" target="_new">Hankook Lee</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
-              <br>
-
-              CVPR 2025 MMFM Workshop <b style="color:Magenta;"></b>
-              <br>
-
-              <!-- [<a href="https://arxiv.org/pdf/2403.10853.pdf" target="_new">pdf</a>] -->
-              <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-            </td>
-          </tr>
-          
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <br><br>
-            <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Preprints </heading></td>
-          </tbody></table>
-
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
-            <!-- ################################################################################################################### -->
-            <tr>
-              <td style="padding:15px;width:30%;vertical-align:middle">
-                  <img src='papers/seo2025fedmosaic/.png' style="border-style: none width:100%;max-width:100%">
-              </td>
-              <td width="75%" valign="middle" align="justify">
-                <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-                  <papertitle>
-                    Paper about One-shot adaptation for VLA Models.
-                  </papertitle>
-                <!-- </a> -->
-                <br>
-                Under review...
-                <br>
-  
-                <!-- [<a href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_new">pdf</a>] -->
-                <!-- [<a href="papers/seo2025fedmosaic/fedmosaic.bib" target="_new">bibtex</a>] -->
-                <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-              </td>
-            </tr>
-
-          <!-- ################################################################################################################### -->
-
-
-        </tbody></table>
-        <p></p>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Awards</heading></td>
-        </tbody></table>
-        <ul>
-          <li>
-            <papertitle> <a href="https://wvcl.vis.xyz/challenges" target="_new">1st Place in Continual Test-time Adaptation for Object Detection </a></papertitle> - VCL Workshop @ ICCV 2023
-            [<a href="https://arxiv.org/pdf/2508.12690" target="_new">technical report</a>]
-            <br>
-          </li>
-          <li>
-            <papertitle> <a href="https://sites.google.com/view/clvision2024/challenge?authuser=0" target="_new">2nd Place in Class-Incremental with Repetition (CIR) using Unlabeled Data </a></papertitle> - 5th CLVISION workshop @ CVPR 2024
-            [<a href="https://arxiv.org/pdf/2508.12692" target="_new">technical report</a>]
-            <br>
-          </li>
-        </ul>
-        <br>
-
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Academic Services</heading></td>
-        </tbody></table>
-        <ul>
-          <li><papertitle>Reviewer</papertitle></li>
-          <ol style="margin-left: -3em">- CVPR(24') </ol>
-        </ul> -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                This template is from <a href="https://jonbarron.info/" target="_new">Jon Barron</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <section class="section" id="awards" aria-labelledby="awards-heading">
+      <div class="section-header">
+        <p class="section-kicker">Recognition</p>
+        <h2 id="awards-heading">Awards</h2>
+      </div>
+      <ul class="award-list">
+        <li>
+          <div>
+            <strong>
+              <a href="https://wvcl.vis.xyz/challenges" target="_blank" rel="noopener">1st Place in Continual Test-time Adaptation for Object Detection</a>
+            </strong>
+            <span>VCL Workshop @ ICCV 2023</span>
+          </div>
+          <a href="https://arxiv.org/pdf/2508.12690" target="_blank" rel="noopener">Technical report</a>
+        </li>
+        <li>
+          <div>
+            <strong>
+              <a href="https://sites.google.com/view/clvision2024/challenge?authuser=0" target="_blank" rel="noopener">2nd Place in Class-Incremental with Repetition using Unlabeled Data</a>
+            </strong>
+            <span>5th CLVISION Workshop @ CVPR 2024</span>
+          </div>
+          <a href="https://arxiv.org/pdf/2508.12692" target="_blank" rel="noopener">Technical report</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
 </body>
-
 </html>
