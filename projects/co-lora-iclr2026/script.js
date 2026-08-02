@@ -37,6 +37,18 @@ const chartData = {
       ['TAKFL', 14.04, 11.36], ['FedDPA', 17.60, 13.98], ['FedDAT', 17.06, 13.72],
       ['PerAda', 18.83, 14.66], ['FedMKT', 17.34, 14.38], ['FedMosaic', 20.87, 15.71]
     ]
+  },
+  table16: {
+    label: 'Table 16',
+    title: 'Three-model heterogeneity',
+    subtitle: 'DRAKE-Dynamic · LLaVA-Llama 1B / 3B / 8B',
+    max: { self: 72, others: 55 },
+    rows: [
+      ['SFT', 66.41, 47.94], ['DITTO', 61.56, 48.19], ['FedSim', 65.00, 47.47],
+      ['FedIT', 66.18, 47.54], ['TAKFL', 64.73, 47.85], ['FedDPA', 63.26, 48.04],
+      ['FedDAT', 60.43, 49.79], ['PerAda', 58.10, 46.90], ['FedMKT', 63.25, 47.88],
+      ['FedMosaic', 68.94, 52.18]
+    ]
   }
 };
 

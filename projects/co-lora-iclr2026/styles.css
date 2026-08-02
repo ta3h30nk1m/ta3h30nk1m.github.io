@@ -616,7 +616,7 @@ button { font: inherit; }
 }
 
 .explorer-controls {
-  padding: 18px 30px;
+  padding: 12px 24px;
   border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: center;
@@ -648,8 +648,8 @@ button { font: inherit; }
 
 .segmented-control button {
   min-width: 76px;
-  min-height: 34px;
-  padding: 7px 13px;
+  min-height: 32px;
+  padding: 6px 12px;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -667,7 +667,7 @@ button { font: inherit; }
 .metric-control button.active { background: var(--accent); }
 
 .metric-legend {
-  padding: 22px 30px 4px;
+  padding: 14px 24px 2px;
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -675,8 +675,8 @@ button { font: inherit; }
 
 .metric-legend button {
   width: min(260px, 45%);
-  min-height: 58px;
-  padding: 10px 16px;
+  min-height: 48px;
+  padding: 7px 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
   display: flex;
@@ -710,7 +710,7 @@ button { font: inherit; }
 .metric-legend button small { font-size: 12px; line-height: 1.4; }
 
 .explorer-meta {
-  padding: 24px 30px 12px;
+  padding: 14px 24px 6px;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -727,7 +727,7 @@ button { font: inherit; }
 
 .explorer-meta h4 {
   margin: 3px 0 0;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.25;
 }
 
@@ -798,10 +798,10 @@ button { font: inherit; }
 .self-key { background: #343841; }
 .others-key { background: var(--accent); }
 
-.chart-body { padding: 20px 30px 24px; }
+.chart-body { padding: 8px 24px 14px; }
 
 .chart-scale {
-  margin: 0 48px 8px 112px;
+  margin: 0 46px 5px 106px;
   display: flex;
   justify-content: space-between;
   color: #8a8f99;
@@ -810,8 +810,8 @@ button { font: inherit; }
 }
 
 .chart-row {
-  min-height: 45px;
-  padding: 5px 0;
+  min-height: 31px;
+  padding: 2px 0;
   display: grid;
   grid-template-columns: 100px 1fr;
   align-items: center;
@@ -822,7 +822,7 @@ button { font: inherit; }
 
 .chart-method {
   color: #515660;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 550;
 }
 
@@ -837,7 +837,7 @@ button { font: inherit; }
 }
 
 .chart-value > span {
-  height: 8px;
+  height: 6px;
   border-radius: 99px;
   display: block;
   overflow: hidden;
@@ -855,7 +855,7 @@ button { font: inherit; }
 
 .chart-value b {
   color: #565b65;
-  font-size: 12px;
+  font-size: 11px;
   font-variant-numeric: tabular-nums;
   text-align: right;
 }
@@ -880,7 +880,7 @@ button { font: inherit; }
 
 .result-explorer > .chart-note {
   margin: 0;
-  padding: 16px 30px;
+  padding: 10px 24px;
   border-top: 1px solid var(--line);
   background: #fafafd;
 }
@@ -1089,26 +1089,26 @@ footer { border-top: 1px solid #2c2f36; color: #9da1ab; background: var(--ink); 
   .result-explorer { margin-top: 38px; }
   .explorer-header { padding: 20px; align-items: flex-start; }
   .explorer-header h3 { font-size: 26px; }
-  .explorer-controls { padding: 16px 20px; }
+  .explorer-controls { padding: 12px 16px; }
   .control-group { width: 100%; align-items: stretch; flex-direction: column; gap: 8px; }
   .segmented-control { width: 100%; }
-  .segmented-control button { min-width: 0; padding-inline: 7px; flex: 1; font-size: 11px; }
-  .metric-legend { padding: 18px 16px 2px; gap: 8px; }
+  .segmented-control button { min-width: 0; min-height: 36px; padding-inline: 5px; flex: 1; font-size: 10px; }
+  .metric-legend { padding: 12px 14px 2px; gap: 8px; }
   .metric-legend button { width: 50%; padding: 9px; gap: 8px; }
   .metric-legend button strong { font-size: 13px; }
   .metric-legend button small { font-size: 11px; }
-  .explorer-meta { padding: 20px 20px 10px; align-items: flex-start; flex-direction: column; gap: 5px; }
+  .explorer-meta { padding: 13px 16px 6px; align-items: flex-start; flex-direction: column; gap: 3px; }
   .explorer-meta p { text-align: left; }
   .chart-heading { padding: 20px; align-items: flex-start; flex-direction: column; gap: 12px; }
   .chart-heading h3 { font-size: 26px; }
   .chart-heading p { font-size: 13px; }
-  .chart-body { padding: 16px; }
-  .chart-scale { margin-left: 90px; margin-right: 43px; }
+  .chart-body { padding: 7px 14px 11px; }
+  .chart-scale { margin-left: 86px; margin-right: 41px; }
   .chart-row { grid-template-columns: 76px 1fr; gap: 8px; }
   .chart-method { font-size: 12px; }
   .chart-value { grid-template-columns: 1fr 40px; gap: 5px; }
   .chart-value b { font-size: 11px; }
-  .result-explorer > .chart-note { padding: 14px 20px; }
+  .result-explorer > .chart-note { padding: 9px 16px; }
   .paper-plots { margin-top: 42px; }
   .comparison-side,
   .result-card { padding: 22px; }
