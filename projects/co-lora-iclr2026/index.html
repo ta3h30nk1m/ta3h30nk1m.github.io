@@ -11,7 +11,7 @@
   <title>Co-LoRA · Collaborative Model Personalization</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -51,11 +51,24 @@
           <button class="button secondary cite-button" type="button">BibTeX</button>
         </div>
 
-        <p class="lead">Different clients can use different-sized—and even different-family—models, yet still learn from one another.</p>
+        <!-- <p class="lead">Different clients can use different-sized—and even different-family—models, yet still learn from one another.</p> -->
       </div>
     </header>
 
     <section class="section" id="overview">
+      <div class="container narrow setup-intro">
+        <p class="section-label">The setup</p>
+        <h2>Personalize different multimodal models&mdash;together.</h2>
+        <p class="section-intro">Each client learns its own stream of private multimodal tasks and may use a different model architecture. A central server coordinates knowledge sharing so every client can improve its own model without requiring identical data, tasks, or model dimensions.</p>
+      </div>
+
+      <figure class="container paper-figure setup-figure">
+        <a href="assets/overview.png" target="_blank" aria-label="Open the collaborative personalization setup at full size">
+          <img src="assets/overview.png" alt="A central server coordinates clients with different multimodal task streams and different model architectures." loading="eager">
+        </a>
+        <figcaption><strong>Setup.</strong> Clients face both <strong class="data-key">data heterogeneity</strong> (different private task streams) and <strong class="model-key">model heterogeneity</strong> (different model architectures), yet collaborate through a shared server. <span>Open full size &nearr;</span></figcaption>
+      </figure>
+
       <div class="container narrow">
         <p class="section-label">The problem</p>
         <h2>Standard LoRA cannot be averaged across heterogeneous models.</h2>

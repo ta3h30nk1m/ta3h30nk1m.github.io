@@ -24,8 +24,8 @@ body {
   color: var(--ink);
   background: var(--page);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 15px;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -51,7 +51,7 @@ button { font: inherit; }
 
 .nav-inner {
   width: min(calc(100% - 48px), var(--max));
-  min-height: 68px;
+  min-height: 54px;
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -61,15 +61,17 @@ button { font: inherit; }
 
 .wordmark {
   width: max-content;
-  font-weight: 750;
-  letter-spacing: -.04em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .04em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav-links {
   display: flex;
   gap: 28px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .nav-links a,
@@ -84,12 +86,12 @@ button { font: inherit; }
 
 .nav-paper {
   justify-self: end;
-  font-size: 14px;
-  font-weight: 650;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .hero {
-  padding: 106px 0 88px;
+  padding: 72px 0 48px;
   border-bottom: 1px solid var(--line);
   text-align: center;
 }
@@ -98,32 +100,34 @@ button { font: inherit; }
 
 .venue,
 .section-label {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   color: var(--accent-dark);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: .12em;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
 .hero h1 {
   margin: 0;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(72px, 9vw, 116px);
-  font-weight: 600;
-  line-height: .9;
-  letter-spacing: -.065em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -.03em;
 }
 
 .paper-title {
   max-width: 900px;
-  margin: 28px auto 26px;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(28px, 3.4vw, 44px);
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -.025em;
+  margin: 12px auto 24px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(22px, 2.8vw, 34px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.45;
+  letter-spacing: 0;
 }
 
 .authors {
@@ -132,7 +136,7 @@ button { font: inherit; }
   justify-content: center;
   gap: 5px 20px;
   font-size: 15px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .authors a {
@@ -156,12 +160,12 @@ button { font: inherit; }
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .button {
-  min-height: 44px;
-  padding: 10px 19px;
+  min-height: 40px;
+  padding: 10px 24px;
   border: 1px solid var(--ink);
   border-radius: 7px;
   display: inline-flex;
@@ -169,8 +173,8 @@ button { font: inherit; }
   justify-content: center;
   gap: 7px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 650;
+  font-size: 13px;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
 }
@@ -191,18 +195,18 @@ button { font: inherit; }
 .button.secondary:hover { border-color: #aeb1bb; }
 
 .lead {
-  max-width: 760px;
-  margin: 66px auto 0;
-  padding-top: 28px;
+  max-width: 680px;
+  margin: 40px auto 0;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(25px, 3vw, 34px);
-  font-weight: 500;
-  line-height: 1.25;
-  letter-spacing: -.018em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 
-.section { padding: 104px 0; }
+.section { padding: 72px 0; }
 
 .soft-section {
   background: var(--surface);
@@ -213,18 +217,18 @@ button { font: inherit; }
 .paper-cta h2,
 .citation-dialog h2 {
   margin: 0;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(38px, 5vw, 60px);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 1.02;
-  letter-spacing: -.035em;
+  line-height: 1.2;
+  letter-spacing: -.03em;
 }
 
 .section-intro {
   max-width: 800px;
-  margin: 24px 0 0;
+  margin: 12px 0 0;
   color: #3f4550;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -299,6 +303,19 @@ button { font: inherit; }
 
 .colora-figure { max-width: 850px; }
 .colora-figure img { max-width: 720px; }
+.setup-figure {
+  max-width: 1000px;
+  margin-top: 38px;
+  margin-bottom: 72px;
+  padding: 36px 42px;
+}
+.setup-figure img { max-width: 898px; }
+.setup-figure figcaption strong.data-key { color: #3158d4; }
+.setup-figure figcaption strong.model-key { color: #d84040; }
+.setup-figure + .narrow {
+  padding-top: 64px;
+  border-top: 1px solid var(--line);
+}
 .result-plot img { max-width: 917px; }
 
 .paper-figure figcaption {
@@ -360,8 +377,9 @@ button { font: inherit; }
   display: grid;
   place-items: center;
   background: var(--surface);
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 23px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -433,10 +451,10 @@ button { font: inherit; }
   justify-content: center;
   gap: .2em;
   background: var(--white);
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(32px, 5vw, 48px);
-  font-style: italic;
-  line-height: 1;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: clamp(20px, 3vw, 28px);
+  font-style: normal;
+  line-height: 1.25;
 }
 
 .equation strong { color: var(--accent-dark); font-weight: 600; }
@@ -458,15 +476,17 @@ button { font: inherit; }
 
 .step {
   color: var(--accent-dark);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .08em;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
 }
 
 .method-card h3,
 .findings h3 {
   margin: 10px 0 10px;
-  font-size: 19px;
+  font-size: 17px;
+  font-weight: 600;
   line-height: 1.35;
   letter-spacing: -.015em;
 }
@@ -475,8 +495,8 @@ button { font: inherit; }
 .findings p {
   margin: 0;
   color: var(--muted);
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.65;
 }
 
 .mini-visual {
@@ -506,8 +526,8 @@ button { font: inherit; }
   border-radius: 5px;
   color: var(--accent-dark);
   background: var(--accent-soft);
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 19px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
 }
 
 .align-visual {
@@ -585,19 +605,20 @@ button { font: inherit; }
 .explorer-kicker {
   margin: 0 0 5px;
   color: var(--accent-dark);
-  font-size: 12px;
-  font-weight: 700;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 10px;
+  font-weight: 500;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
 
 .explorer-header h3 {
   margin: 0;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 30px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -.025em;
+  line-height: 1.25;
+  letter-spacing: -.03em;
 }
 
 .explorer-legend {
@@ -632,8 +653,9 @@ button { font: inherit; }
 
 .control-group > span {
   color: var(--muted);
-  font-size: 12px;
-  font-weight: 650;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 10px;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .07em;
 }
@@ -771,11 +793,11 @@ button { font: inherit; }
 
 .chart-heading h3 {
   margin: 4px 0 2px;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 30px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -.025em;
+  line-height: 1.25;
+  letter-spacing: -.03em;
 }
 
 .chart-heading p {
@@ -923,11 +945,11 @@ button { font: inherit; }
 .result-number {
   margin: 18px 0 28px;
   display: block;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(64px, 8vw, 92px);
-  font-weight: 600;
-  line-height: .9;
-  letter-spacing: -.05em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(38px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.03em;
 }
 
 .result-bars { display: grid; gap: 13px; }
@@ -974,8 +996,8 @@ button { font: inherit; }
 
 .finding-mark {
   color: var(--accent-dark);
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 27px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -999,7 +1021,7 @@ button { font: inherit; }
 }
 
 .paper-cta .section-label { color: #b9b9ff; }
-.paper-cta h2 { font-size: clamp(40px, 5vw, 58px); }
+.paper-cta h2 { font-size: 28px; }
 .paper-cta p:not(.section-label) { max-width: 700px; margin: 18px 0 0; color: #b9bdc6; }
 
 .cta-actions { display: grid; gap: 18px; justify-items: start; }
@@ -1025,7 +1047,7 @@ footer { border-top: 1px solid #2c2f36; color: #9da1ab; background: var(--ink); 
 }
 
 .citation-dialog::backdrop { background: rgba(17, 19, 24, .58); }
-.citation-dialog h2 { font-size: 38px; }
+.citation-dialog h2 { font-size: 28px; }
 .citation-dialog form { float: right; }
 
 .dialog-close {
@@ -1064,31 +1086,34 @@ footer { border-top: 1px solid #2c2f36; color: #9da1ab; background: var(--ink); 
 }
 
 @media (max-width: 600px) {
-  body { font-size: 16px; }
+  body { font-size: 15px; }
   .container,
   .nav-inner { width: min(calc(100% - 32px), var(--max)); }
   .nav-inner { min-height: 62px; }
-  .nav-paper { font-size: 13px; }
-  .hero { padding: 72px 0 64px; }
-  .hero h1 { font-size: clamp(62px, 21vw, 84px); }
-  .paper-title { margin-top: 22px; font-size: 28px; }
+  .nav-paper { font-size: 11px; }
+  .hero { padding: 56px 0 42px; }
+  .hero h1 { font-size: 26px; }
+  .paper-title { margin-top: 10px; font-size: 20px; }
   .desktop-break { display: none; }
-  .authors { gap: 4px 14px; font-size: 14px; }
+  .authors { gap: 4px 12px; font-size: 13px; }
   .affiliations { line-height: 1.5; }
-  .lead { margin-top: 46px; font-size: 25px; }
-  .section { padding: 72px 0; }
+  .lead { margin-top: 34px; font-size: 15px; }
+  .section { padding: 58px 0; }
   .section h2,
-  .paper-cta h2 { font-size: 39px; }
-  .section-intro { font-size: 16px; }
+  .paper-cta h2 { font-size: 24px; }
+  .section-intro { font-size: 15px; }
   .fedmosaic-summary ul { grid-template-columns: 1fr; }
   .fedmosaic-summary li { font-size: 13px; }
   .comparison { margin-top: 38px; }
   .paper-figure { margin-top: 38px; padding: 16px; }
   .paper-figure figcaption { margin: 20px -16px -16px; padding: 16px; font-size: 13px; }
+  .setup-figure { margin-top: 30px; margin-bottom: 54px; padding: 20px 12px; }
+  .setup-figure figcaption { margin: 20px -12px -20px; }
+  .setup-figure + .narrow { padding-top: 48px; }
   .comparison + .paper-figure { margin-top: 18px; }
   .result-explorer { margin-top: 38px; }
   .explorer-header { padding: 20px; align-items: flex-start; }
-  .explorer-header h3 { font-size: 26px; }
+  .explorer-header h3 { font-size: 22px; }
   .explorer-controls { padding: 12px 16px; }
   .control-group { width: 100%; align-items: stretch; flex-direction: column; gap: 8px; }
   .segmented-control { width: 100%; }
@@ -1100,7 +1125,7 @@ footer { border-top: 1px solid #2c2f36; color: #9da1ab; background: var(--ink); 
   .explorer-meta { padding: 13px 16px 6px; align-items: flex-start; flex-direction: column; gap: 3px; }
   .explorer-meta p { text-align: left; }
   .chart-heading { padding: 20px; align-items: flex-start; flex-direction: column; gap: 12px; }
-  .chart-heading h3 { font-size: 26px; }
+  .chart-heading h3 { font-size: 22px; }
   .chart-heading p { font-size: 13px; }
   .chart-body { padding: 7px 14px 11px; }
   .chart-scale { margin-left: 86px; margin-right: 41px; }
@@ -1116,14 +1141,14 @@ footer { border-top: 1px solid #2c2f36; color: #9da1ab; background: var(--ink); 
   .adapter-row { grid-template-columns: 68px 1fr auto 1fr; gap: 7px; }
   .adapter-row.co-row { grid-template-columns: 68px .8fr 1.5fr .8fr; }
   .model-name { font-size: 12px; }
-  .matrix { height: 48px; font-size: 19px; }
+  .matrix { height: 48px; font-size: 17px; }
   .matrix.narrow { margin-inline: 7px; }
   .share-arrow span { width: 190px; }
   .figure-note { font-size: 13px; text-align: left; }
-  .equation { padding: 24px 12px; font-size: 33px; }
+  .equation { padding: 22px 10px; font-size: 20px; }
   .method-card { padding: 23px; }
   .context-note { padding: 18px; }
-  .result-number { font-size: 68px; }
+  .result-number { font-size: 44px; }
   .findings article { padding: 23px; }
   .paper-cta { padding: 64px 0; }
   .citation-dialog { padding: 22px; }
