@@ -6,46 +6,56 @@
   <meta name="author" content="Taeheon Kim">
   <meta name="description" content="Taeheon Kim, Ph.D. student at Seoul National University working on efficient learning and knowledge transfer.">
   <title>Taeheon Kim</title>
+  <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="nav-brand" href="#">Taeheon Kim</a>
       <div class="nav-links">
-        <a href="#news">News</a>
+        <a class="nav-active" href="#about">About</a>
+        <a href="personal/CV_new.pdf" target="_blank" rel="noopener">CV</a>
         <a href="#publications">Publications</a>
-        <a href="#awards">Awards</a>
+        <a href="#news">News</a>
       </div>
+      <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+        <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/>
+        </svg>
+        <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+        </svg>
+      </button>
     </nav>
   </header>
 
   <main class="page-shell">
-    <section class="hero" aria-labelledby="intro-heading">
+    <section class="hero" id="about" aria-labelledby="intro-heading">
       <div class="hero-copy">
-        <p class="eyebrow">Ph.D. Student / Machine Learning Researcher</p>
         <h1 id="intro-heading">Taeheon Kim</h1>
         <p class="lead">
-          I am a 2nd-year Ph.D. student in Electrical and Computer Engineering at
+          I am a 3rd-year Ph.D. student in Electrical and Computer Engineering at
           <a href="https://snumprlab.github.io/" target="_blank" rel="noopener">Machine Perception and Reasoning Lab</a>,
           <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener">Seoul National University</a>,
           advised by Prof.
           <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>.
         </p>
         <p>
-          My research focuses on model personalization through efficient learning, including continual learning,
+          My research focuses on model post-training through efficient learning algorithms, including continual learning,
           domain adaptation, machine unlearning, and knowledge transfer such as federated learning and model merging.
         </p>
         <p>
           I received my B.S. in Computer Science from
-          <a href="https://www.yonsei.ac.kr/en_sc/" target="_blank" rel="noopener">Yonsei University</a>
-          under the supervision of Prof.
-          <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>.
+          <a href="https://www.yonsei.ac.kr/en_sc/" target="_blank" rel="noopener">Yonsei University</a>.
         </p>
 
         <div class="profile-actions" aria-label="Profile links">
-          <a class="button primary" href="personal/CV_new.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="button primary" href="personal/CV_thk.pdf" target="_blank" rel="noopener">CV</a>
           <a class="button" href="mailto:thkim0305@snu.ac.kr">Email</a>
           <a class="button" href="https://scholar.google.com/citations?user=VSYbxlcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
           <a class="button" href="https://www.linkedin.com/in/taeheon-kim-0904ba319/" target="_blank" rel="noopener">LinkedIn</a>
@@ -54,22 +64,21 @@
       </div>
 
       <aside class="profile-panel" aria-label="Profile summary">
-        <img class="profile-photo" src="personal/me2.jpg" alt="Taeheon Kim">
-        <div class="research-tags" aria-label="Research interests">
-          <span>Continual Learning</span>
-          <span>Model Merging</span>
-          <span>Machine Unlearning</span>
-          <span>Federated Learning</span>
+        <div class="profile-photo-frame">
+          <img class="profile-photo" src="personal/me4.jpg" alt="Taeheon Kim" width="1365" height="2048">
         </div>
       </aside>
     </section>
 
     <section class="section" id="news" aria-labelledby="news-heading">
       <div class="section-header">
-        <p class="section-kicker">Latest</p>
         <h2 id="news-heading">News</h2>
       </div>
       <ol class="news-list" tabindex="0" aria-label="News list">
+        <li>
+          <time datetime="2026-11">2026.11</time>
+          <span><strong>DART</strong> <a class="pub-ref" href="#pub-dart">[4]</a> was selected as a <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/winners" target="_blank" rel="noopener"><strong class="highlight-text">Qualcomm Innovation Fellowship 2026 South Korea winner</strong></a>.</span>
+        </li>
         <li>
           <time datetime="2026-06">2026.06</time>
           <span><strong>DART</strong> <a class="pub-ref" href="#pub-dart">[4]</a> has been accepted to <strong>ECCV 2026</strong>.</span>
@@ -113,7 +122,6 @@
 
     <section class="section" id="publications" aria-labelledby="publications-heading">
       <div class="section-header">
-        <p class="section-kicker">Selected Work</p>
         <h2 id="publications-heading">Publications</h2>
       </div>
 
@@ -129,12 +137,12 @@
             <a href="http://github.com/Donghyun1228" target="_blank" rel="noopener">Donghyun Shin</a>,
             <a href="http://ppolon.github.io/" target="_blank" rel="noopener">Jonghyun Choi</a>
           </p>
-          <p class="venue"><strong>ECCV 2026</strong> <span>to appear</span></p>
+          <p class="venue"><strong>ECCV 2026</strong></p>
           <div class="paper-links">
             <a href="https://arxiv.org/abs/2607.00666" target="_blank" rel="noopener">PDF</a>
             <a href="papers/kang2026dart/kang2026dart.bib" target="_blank" rel="noopener">BibTeX</a>
             <a href="https://github.com/snumprlab/dart" target="_blank" rel="noopener">Code</a>
-            <a href="https://twkang43.github.io/projects/dart/" target="_blank" rel="noopener">Project Page</a>
+            <!-- <a href="https://twkang43.github.io/projects/dart/" target="_blank" rel="noopener">Project Page</a> -->
           </div>
         </div>
       </article>
@@ -207,10 +215,18 @@
 
     <section class="section" id="awards" aria-labelledby="awards-heading">
       <div class="section-header">
-        <p class="section-kicker">Recognition</p>
         <h2 id="awards-heading">Awards</h2>
       </div>
       <ul class="award-list">
+        <li>
+          <div>
+            <strong>
+              <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/winners" target="_blank" rel="noopener">Qualcomm Innovation Fellowship 2026 South Korea Winner</a>
+            </strong>
+            <!-- <span>2026 · DART</span> -->
+          </div>
+          <a href="#pub-dart">Publication</a>
+        </li>
         <li>
           <div>
             <strong>
